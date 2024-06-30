@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+  .modal {
+    padding: 0 !important;
+  }
+  .modal-dialog {
+    margin: 0 !important;
+  }
+  .modal-body {
+    padding: 0.5rem 1rem 2rem !important;
+  }
+}

@@ -1,0 +1,227 @@
+.component {
+}
+
+.connectBtn,
+.connectBtn:hover,
+.connectBtn:active,
+.connectBtn:focus {
+  background-color: var(--bg-color-2);
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  border-radius: 90px;
+  /* width: 150px; */
+}
+
+.overlay {
+  width: 320px;
+}
+
+.notificationBtn {
+  cursor: pointer;
+  color: var(--text-color-1);
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
+.notificationHeader {
+  padding: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color-3);
+}
+
+.notificationBody {
+  padding: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color-1);
+}
+
+.notificationZero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 80px 0;
+}
+
+.notificationZero svg {
+  width: 139px;
+  height: 128px;
+}
+
+.notificationZero span {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-color-2);
+}
+
+.walletBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.divider {
+  width: 1px;
+  height: auto;
+  margin: 0 24px;
+  background-color: #e3e4e6;
+}
+
+.walletPreview {
+  cursor: pointer;
+  padding: 11px 18px;
+  background-color: var(--bg-color-2);
+  border-radius: 90px;
+  /* width: 130px; */
+  display: flex;
+  justify-content: center;
+}
+
+.walletPreviewAvatar {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.walletPreviewHash {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff4cb5;
+}
+
+.walletPreviewHashOnBtn {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-color-1);
+}
+
+.walletPreviewArrow {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  transform: rotate(180deg);
+}
+
+.walletHeader {
+  padding: 20px 16px 20px 14px;
+  align-items: center;
+  display: flex;
+}
+
+.walletAvatarCol {
+  color: #ff4cb5;
+}
+
+.walletAvatar {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.walletHash {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #4f6ae6;
+}
+
+.stats {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.statRow {
+  color: #7f7f94;
+  display: flex;
+}
+
+.statRow :global div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.statRow + .statRow {
+  margin-top: 32px;
+}
+
+.statIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+  color: #ff4cb5;
+}
+
+.statName {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff4cb5;
+}
+
+.statValue {
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
+.statTag {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff4cb5;
+  font-weight: 300;
+}
+
+.disconnectBtnRow {
+  padding: 24px;
+  justify-content: center;
+}
+
+.disconnectBtn,
+.disconnectBtn:hover {
+  padding: 6px 20px !important;
+  border: 1.5px solid #ff4cb5 !important;
+  text-transform: uppercase !important;
+  font-size: 13px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  border-radius: 40px !important;
+  background: #0a0a0a !important;
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .walletPreview {
+    justify-content: flex-start;
+    padding: 0;
+    line-height: 15px;
+    font-size: 14px !important;
+  }
+
+  .walletPreviewHashOnBtn {
+    line-height: 15px;
+  }
+
+  .connectBtn,
+  .connectBtn:hover,
+  .connectBtn:active,
+  .connectBtn:focus {
+    /* width: 120px; */
+    line-height: 15px;
+  }
+}
